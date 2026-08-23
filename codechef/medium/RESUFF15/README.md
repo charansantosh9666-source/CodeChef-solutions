@@ -65,7 +65,7 @@ Shipping not available for packages above 5 kg.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-23T03:22:31.212Z  
+**Submitted:** 2026-08-23T03:22:49.029Z  
 
 ```java
 import java.util.Scanner; 
@@ -76,7 +76,7 @@ class Codechef {
         double weight = scanner.nextDouble(); 
         scanner.nextLine(); 
         String deliverySpeed = scanner.nextLine(); 
-        if(weight <= 5.0){
+        if(weight <= 5.){
             if(deliverySpeed.equals("Express")){
                 System.out.println("Shipping charge: $15");
             }else{
