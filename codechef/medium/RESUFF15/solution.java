@@ -6,7 +6,7 @@ class Codechef {
         double weight = scanner.nextDouble(); 
         scanner.nextLine(); 
         String deliverySpeed = scanner.nextLine(); 
-        if(weight <= 5.0){
+        if(weight <= 5.){
             if(deliverySpeed.equals("Express")){
                 System.out.println("Shipping charge: $15");
             }else{
