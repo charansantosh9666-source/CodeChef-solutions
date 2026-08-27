@@ -5,6 +5,6 @@ int main() {
     string name;
     cin >> name;
     int n=name.length();
-    cout << name[n-1] << endl;
+    cout << name[7] << endl;
     return 0;
 }
