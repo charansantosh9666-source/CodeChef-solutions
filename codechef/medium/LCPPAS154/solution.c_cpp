@@ -2,7 +2,10 @@
 using namespace std;
 
 int main() {
-    // Write your code here
-    cout<<300<<endl<<18000;
-    return 0;
+	string name1 = "Naruto";
+	string name2 = "Sasuke";
+	// complete the code.
+	name1+=name2;
+	cout<<name1.length();
+	return 0;
 }
