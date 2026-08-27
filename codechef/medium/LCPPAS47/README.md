@@ -23,7 +23,7 @@ f
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-27T16:22:44.651Z  
+**Submitted:** 2026-08-27T16:23:10.595Z  
 
 ```c_cpp
 #include <iostream>
@@ -33,7 +33,7 @@ int main() {
     string name;
     cin >> name;
     int n=name.length();
-    cout << name[n-1] << endl;
+    cout << name[7] << endl;
     return 0;
 }
 ```
