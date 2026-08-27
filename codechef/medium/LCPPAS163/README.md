@@ -50,7 +50,7 @@ The subarray [3, 4, 5] is the longest non-zero subarray which has length 3.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-27T16:48:03.689Z  
+**Submitted:** 2026-08-27T16:50:01.968Z  
 
 ```c_cpp
 #include <iostream>
@@ -69,9 +69,8 @@ int main() {
 	for(int j=0;j<n;j++){
 	    if(arr[j]!=0){
 	        a++;
-	    }else{
-	        
 	        Max=max(Max,a);
+	    }else{
 	        a=0;
 	    }
 	}
