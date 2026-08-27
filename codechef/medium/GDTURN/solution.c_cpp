@@ -1,0 +1,22 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    // Update your code here.
+    int t;
+    cin>>t;
+    while(t--){
+        int n,sum=0;
+        cin>>n;
+        int arr[n];
+        for(int i=0;i<n;i++){
+            cin>>arr[i];
+            if(arr[i]%3==0){
+                sum+=arr[i];
+            }
+        }
+        cout<<sum<<endl;
+    }
+    return 0;
+}
