@@ -34,7 +34,7 @@ The prime numbers in the range [$2$, $11$] are: $2$, $3$, $5$, $7$ and $11$
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-27T17:10:18.103Z  
+**Submitted:** 2026-08-27T17:10:16.563Z  
 
 ```c_cpp
 #include <iostream>
