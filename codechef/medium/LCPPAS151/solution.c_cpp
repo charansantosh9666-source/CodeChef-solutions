@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write your code here
+    int a=8,b=4;
+    cout<<a+b<<endl<<a-b<<endl<<a/b<<endl<<a*b;
+}
