@@ -97,7 +97,7 @@ There are initially $100$ rows, and $100$ columns. So the initial number of cell
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-27T17:34:27.011Z  
+**Submitted:** 2026-08-27T17:42:06.989Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
