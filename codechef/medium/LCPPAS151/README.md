@@ -26,7 +26,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-27T16:30:30.089Z  
+**Submitted:** 2026-08-27T16:30:35.245Z  
 
 ```c_cpp
 #include <iostream>
@@ -36,6 +36,7 @@ int main() {
     // Write your code here
     int a=8,b=4;
     cout<<a+b<<endl<<a-b<<endl<<a/b<<endl<<a*b;
+    return 0;
 }
 
 ```
