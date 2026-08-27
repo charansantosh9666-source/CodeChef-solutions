@@ -4,33 +4,63 @@
 
 ## Problem
 
-_Description not available._
+Write a program to calculate the sum of the digits present in an alphanumeric string.
+
+### Input Format
+- The first line contains an integer, T, denoting the number of test cases.
+- Each of the next T lines contains a string consisting of lowercase/uppercase English letters, along with digits 0 to 9. (There shall be no space in the string)
+### Output Format
+- For each test case, print the sum of digits in each string.
+### Constraints
+- 1 ≤ T ≤ 20
+- 1 ≤ Length of each string ≤ 1000
+### Sample 1:
+Input
+Output
+
+```
+1
+Hel#284!lo23Chef
+```
+
+```
+19
+```
+
+### Explanation:
+
+2 + 8 + 4 + 2 + 3 = 19
 
 ## Solution
 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-27T17:18:32.726Z  
+**Submitted:** 2026-08-27T17:38:41.547Z  
 
 ```c_cpp
 #include <iostream>
+#include <string>
+#include <cctype>
 using namespace std;
 
 int main() {
+    // Write your code here
     int t;
     cin>>t;
     while(t--){
-        int x,y;
-        cin>>x>>y;
-        // your code goes here
-        if(x+y>6){
-            cout<<"YES"<<endl;
-        }else{
-            cout<<"NO"<<endl;
+        string s;
+        cin>>s;
+        int sum=0;
+        for(char c:s){
+            if(isdigit(c)){
+                sum+=c-'0';
+            }
         }
+        cout<<sum<<endl;
+    
     }
-	return 0;
+    return 0;
 }
 
 ```
