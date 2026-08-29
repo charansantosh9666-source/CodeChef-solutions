@@ -30,7 +30,7 @@ The factorial of the given number is: 720
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T06:01:34.076Z  
+**Submitted:** 2026-08-29T01:01:27.172Z  
 
 ```py
 # Debug the code below to output the factiorial of a user defined input n
