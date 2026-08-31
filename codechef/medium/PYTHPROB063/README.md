@@ -24,7 +24,7 @@ This demonstrates how to customize the output by specifying a separator. You can
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T00:31:20.953Z  
+**Submitted:** 2026-08-31T13:00:27.868Z  
 
 ```py
 # The sep parameter is used to specify the string that separates the items when printed.
