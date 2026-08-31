@@ -1,5 +1,3 @@
-# The sep parameter is used to specify the string that separates the items when printed.
-
-# In this example, the items "apple", "banana", "cherry", and "date" are separated by " | ".
-
-print("apple", "banana", "cherry", "date", sep=" | ")
+# debug the code written below 
+print("Python", "is", "awesome", sep=", ")
+print("Let's", "learn", "to", "code.", sep=", ")
