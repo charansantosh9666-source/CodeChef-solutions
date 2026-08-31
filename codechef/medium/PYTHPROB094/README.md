@@ -4,30 +4,16 @@
 
 ## Problem
 
-### Favorite Food Introduction
-
-Fix the syntax error in the print() statement so it correctly displays the person's name, favorite food, and reason while maintaining the expected format. The issue arises due to missing quotes around the string, specifically handling the apostrophe in "It's". The correct option should properly format the string using.format() method and match the expected output.
-
-```
-print("Name: {} Favorite Food: {} Reason: {}.".format("John", "Pizza", Its cheesy and delicious!))
-
-```
-
-### Expected Output:
-
-```
-Name: John Favorite Food: Pizza Reason: It's cheesy and delicious!.
-
-```
+_Description not available._
 
 ## Solution
 
-**Language:** C++  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T13:11:53.061Z  
+**Submitted:** 2026-08-31T13:10:57.725Z  
 
-```cpp
+```py
 # Printing a formatted string with workout details using an f-string
 Math=90
 Science=85
