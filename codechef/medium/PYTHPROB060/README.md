@@ -22,7 +22,7 @@ Make sure to combine the text and number in a single call to the `print()` funct
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-30T02:29:22.647Z  
+**Submitted:** 2026-08-31T00:31:03.414Z  
 
 ```py
 # cook your dish here 
