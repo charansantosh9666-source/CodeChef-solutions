@@ -4,14 +4,14 @@
 
 ## Problem
 
-### Printing a Quote from Winston Churchill
+### Formatting Text with Single Quotes and Backslashes
 
-In this task, you need to identify and correct errors in the provided Python code so that it outputs the following message in the proper format:
+In this task, you are required to write a Python program that displays a message containing both double quotes and single quotes, using escape characters and a custom separator.
+
+You should reproduce the following output exactly:
 
 ```
-"Success is not final,
-Failure is not fatal: It is the courage to continue that counts."
-    - Winston Churchill
+The programmer exclaimed - "It's amazing how Python handles special characters!"
 
 ```
 
@@ -20,13 +20,11 @@ Failure is not fatal: It is the courage to continue that counts."
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T13:05:40.675Z  
+**Submitted:** 2026-08-31T13:06:31.249Z  
 
 ```py
-# Debug this code to fix the formatting
-print("Success is not final\nFailure is not fatal: It is the courage to continue that counts.")
-print("\t- Winston Churchill")
-
+# cook your dish here
+print("The programmer exclaimed - \"It\'s amazing how Python handles special characters!\"")
 ```
 
 ---
