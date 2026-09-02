@@ -52,7 +52,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:43:21.659Z  
+**Submitted:** 2026-09-02T14:47:11.849Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -65,13 +65,11 @@ int main() {
 	while (t--){
 	    int a;
 	    cin>>a;
-	    if(a==1){
-	        cout<<20<<endl;
-	    }else if(a==2){
-	        cout<<30<<endl;
-	    }else{
-	        
-	    }
+	    if(a%2==0){
+	            cout<<a*15<<endl;
+	        }else{
+	            cout<<20+((a-1)*15)<<endl;
+	        }
 	}
 }
 
