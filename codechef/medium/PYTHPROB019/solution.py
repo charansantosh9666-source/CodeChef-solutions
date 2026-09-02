@@ -1,11 +1,9 @@
-# Define the number of rows in the seating arrangement
-number_of_rows = 5
+# Given values
+number_of_jars =4   # Initalize it with number_of_jars value
+candies_per_jar = 15  # Initalize it with candies_per_jar value
 
-# Define the number of seats in each row
-seats_per_row = 12
+# Calculate total candies
+total_candies =number_of_jars * candies_per_jar # Your multiplication code here
 
-# Calculate the total number of seats by multiplying rows with seats per row
-total_seats = number_of_rows * seats_per_row
-
-# Print the total number of seats
-print(total_seats)  # This will output: 60
+# Print the result
+print(total_candies)
