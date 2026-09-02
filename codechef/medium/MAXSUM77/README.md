@@ -51,15 +51,38 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:05:02.725Z  
+**Submitted:** 2026-09-02T15:12:55.925Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
-
+void solve(){
+    int n,k;
+    cin>>n>>k;
+    vector<int>a(n);
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    int r=n-k;
+    long long c=0;
+    for(int i=0;i<r;i++){
+        c+=a[i];
+    }
+    long long m=c;
+    for(int i=r;i<n;i++){
+        c+=a[i]-a[i-r];
+        m=max(m,c);
+    }
+    cout<<m<<"\n";
+}
 int main() {
 	// your code goes here
-	
+	int t;
+	cin>>t;
+	while(t--){
+	    solve();
+	}
+	return 0;
 }
 
 ```
