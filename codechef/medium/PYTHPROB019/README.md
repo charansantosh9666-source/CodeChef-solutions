@@ -4,45 +4,42 @@
 
 ## Problem
 
-### Worked example - Total Seats in Theater Rows
+### Total Candies in Jars
 
-In this example, we determine the total number of seats in a theater by multiplying the number of rows by the number of seats in each row.
+In this task, you will determine how many candies are in total by multiplying the number of jars by the candies in each jar.
 
-Consider the following information:
+ **Data Values** 
+• Number of jars: 4
+• Candies per jar: 15
 
-- The theater has 5 rows.
-- Each row contains 12 seats.
-
-To find the total number of seats, we multiply the number of rows by the number of seats per row.
-
-When executed, the code will display:
+ **Sample Output** 
+If you plug in 4 for jars and 15 for candies_per_jar, your output should show:
 
 ```
 60
 
 ```
 
-This output indicates that there are 60 seats in total (5 × 12), effectively demonstrating the multiplication operation in Python.
+Give it a try and see how many candies you end up with!
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T11:49:17.443Z  
+**Submitted:** 2026-09-02T11:49:59.524Z  
 
 ```py
-# Define the number of rows in the seating arrangement
-number_of_rows = 5
+# Given values
+number_of_jars =4   # Initalize it with number_of_jars value
+candies_per_jar = 15  # Initalize it with candies_per_jar value
 
-# Define the number of seats in each row
-seats_per_row = 12
+# Calculate total candies
+total_candies =number_of_jars * candies_per_jar # Your multiplication code here
 
-# Calculate the total number of seats by multiplying rows with seats per row
-total_seats = number_of_rows * seats_per_row
+# Print the result
+print(total_candies)
 
-# Print the total number of seats
-print(total_seats)  # This will output: 60
 ```
 
 ---
