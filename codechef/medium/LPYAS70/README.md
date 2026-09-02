@@ -53,14 +53,14 @@ Neither
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T12:25:06.963Z  
+**Submitted:** 2026-09-02T12:26:03.255Z  
 
 ```py
 # cook your dish here
 a,b,c=map(int,input().split())
-if(a<b and a<c):
+if(a<b and b<c):
     print("Increasing")
-elif(a>b and a>c):
+elif(a>b and b>c):
     print("Decreasing")
 else:
     print("Neither")
