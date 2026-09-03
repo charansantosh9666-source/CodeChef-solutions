@@ -11,7 +11,7 @@ _Description not available._
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T01:49:42.831Z  
+**Submitted:** 2026-09-03T01:50:49.831Z  
 
 ```java
 import java.util.Scanner;
@@ -27,7 +27,7 @@ class Codechef {
             }
             i++;
         }
-        
+        s.close();
     }
 }
 ```
