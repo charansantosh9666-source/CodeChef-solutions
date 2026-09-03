@@ -16,12 +16,12 @@ To get AC (Accepted) in this problem, use break inside the while loop — it imm
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T01:53:58.857Z  
+**Submitted:** 2026-09-03T01:54:22.510Z  
 
 ```java
 class Codechef {
     public static void main(String[] args) {
-     a=1;
+     int a=1;
        // This infinite loop simulates a continuously running server.
         while(true)
         {
