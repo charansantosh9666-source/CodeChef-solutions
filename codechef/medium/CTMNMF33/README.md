@@ -16,21 +16,18 @@ To get AC (Accepted) in this problem, use break inside the while loop — it imm
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T01:53:45.052Z  
+**Submitted:** 2026-09-03T01:55:01.120Z  
 
 ```java
 class Codechef {
     public static void main(String[] args) {
-     a=1;
+     int a=1;
        // This infinite loop simulates a continuously running server.
         while(true)
         {
              System.out.println("Server is running");
              //Write break; below
-             if(a==4){
-                 break
-             }
-             a++;
+             break;
         }
     
     }
