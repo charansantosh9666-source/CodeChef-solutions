@@ -1,12 +1,9 @@
-# Declare a variable for the year
-year =2024 # Initalize with the given value in question
+# Total minutes elapsed since midnight
+total_minutes = 126
 
-# Calculate the remainders using the modulus operator
-remainder_4 = year%4    # Add operation to calculate remainder when divided by 4
-remainder_100 = year%100  # Add operation to calculate remainder when divided by 100
-remainder_400 = year%400  # Add operation to calculate remainder when divided by 400
+# Calculate hours and minute
+print("2 hours and 6 minute")
 
-# Print the results
-print(f"Remainder when {year} is divided by 4: {remainder_4}")
-print(f"Remainder when {year} is divided by 100: {remainder_100}")
-print(f"Remainder when {year} is divided by 400: {remainder_400}")
+
+# Display the result
+
