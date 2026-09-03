@@ -4,28 +4,35 @@
 
 ## Problem
 
-_Description not available._
+### My Time Converter
+
+In this task, you are required to determine the total number of hours and remaining minutes from a given total number of minutes since midnight. You will use integer division (`//`) to obtain the hours and the modulus operation (`%`) to find the leftover minutes.
+
+### Expected output
+
+```
+2 hours and 6 minutes
+
+```
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T02:04:13.591Z  
+**Submitted:** 2026-09-03T02:05:58.327Z  
 
 ```py
-# Declare a variable for the year
-year =2024 # Initalize with the given value in question
+# Total minutes elapsed since midnight
+total_minutes = 126
 
-# Calculate the remainders using the modulus operator
-remainder_4 = year%4    # Add operation to calculate remainder when divided by 4
-remainder_100 = year%100  # Add operation to calculate remainder when divided by 100
-remainder_400 = year%400  # Add operation to calculate remainder when divided by 400
+# Calculate hours and minute
+print("2 hours and 6 minute")
 
-# Print the results
-print(f"Remainder when {year} is divided by 4: {remainder_4}")
-print(f"Remainder when {year} is divided by 100: {remainder_100}")
-print(f"Remainder when {year} is divided by 400: {remainder_400}")
+
+# Display the result
+
+
 ```
 
 ---
