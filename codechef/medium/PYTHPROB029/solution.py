@@ -1,12 +1,8 @@
-# Declare a variable for the year
-year =2024 # Initalize with the given value in question
+# Declare a variable for the number
+number = 12345
 
-# Calculate the remainders using the modulus operator
-remainder_4 = year%4    # Add operation to calculate remainder when divided by 4
-remainder_100 = year%100  # Add operation to calculate remainder when divided by 100
-remainder_400 = year%400  # Add operation to calculate remainder when divided by 400
+# Use the modulus operation to find the last digit
+last_digit = number % 10
 
-# Print the results
-print(f"Remainder when {year} is divided by 4: {remainder_4}")
-print(f"Remainder when {year} is divided by 100: {remainder_100}")
-print(f"Remainder when {year} is divided by 400: {remainder_400}")
+# Print the result
+print(last_digit)
