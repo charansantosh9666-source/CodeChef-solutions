@@ -31,15 +31,20 @@ The first occurrence of the number 8 is at the 2nd index.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-06T03:03:32.646Z  
+**Submitted:** 2026-09-06T03:02:01.406Z  
 
 ```py
 numbers = list(map(int, input().split()))
 # Update your code below this line
 n=len(numbers)
 for i in range(0,n):
-    if(8==numbers[i]):
-        print(i)
+    a=numbers[i]
+    c=0
+    for j in range(0,n):
+        if(i!=j and a==numbers[j]):
+            c+=1
+    if(c==0):
+        print(a)
         break
 ```
 
