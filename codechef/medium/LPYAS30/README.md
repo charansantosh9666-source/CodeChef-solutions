@@ -18,7 +18,7 @@ Kelvin - 298.5
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-06T02:29:37.428Z  
+**Submitted:** 2026-09-06T02:31:26.474Z  
 
 ```py
 # cook your dish here
@@ -29,6 +29,7 @@ temperature=float(25.5)
 
 print("Celsius","-",temperature)
 print("Kelvin","-",temperature + 273)
+
 ```
 
 ---
