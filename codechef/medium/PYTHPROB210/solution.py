@@ -1,18 +1,18 @@
-# Declare the starting balance as a flo
-# Declare the salary deposit as a float
+# Declare the initial distance as a float
+d=float(125.5)
+# Declare the distance traveled on day 1 as an integer
+d1=50
+# Declare the distance traveled on day 2 as a float
+d2=float(78.25)
+# Declare the error correction as an integer
+e=12
+
+# Declare the calibration adjustment as a float
+c=float(5.75)
+
+# Calculate the total distance traveled
+total_distance=d+d1+d2-e-c
 
 
-# Declare the grocery cost as a float
-
-
-# Declare the utility bill as a float
-
-
-# Declare the bonus deposit as a float
-
-
-# Calculate the final account balance by adding and subtracting transactions
-  
-
-# Print the final account balance
-print(6418.969999999999)  
+# Print the total distance traveled
+print(total_distance)  
