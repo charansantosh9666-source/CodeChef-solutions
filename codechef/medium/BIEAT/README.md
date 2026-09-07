@@ -73,7 +73,7 @@ Each number has at most $4$ significant bits, so removing $4$ least significant 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:53:52.346Z  
+**Submitted:** 2026-09-07T14:56:18.342Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -81,7 +81,28 @@ using namespace std;
 
 int main() {
 	// your code goes here
+	ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
+    int n;
+    if (!(cin >> n)) return 0;
+
+    vector<long long> a(n);
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
+    }
+
+    int m;
+    cin >> m;
+
+    for (int i = 0; i < n; ++i) {
+        // Shift right by M bits to remove the M least significant bits
+        long long result = a[i] >> m;
+        cout << result << (i == n - 1 ? "" : " ");
+    }
+    cout << "\n";
+
+    return 0;
 }
 
 ```
