@@ -83,7 +83,7 @@ Therefore, the required sum is `0`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:50:36.549Z  
+**Submitted:** 2026-09-07T14:51:43.518Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
