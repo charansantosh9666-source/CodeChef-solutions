@@ -29,7 +29,7 @@ Feel free to adjust the cost per unit, the number of units needed, or the delive
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T01:24:54.107Z  
+**Submitted:** 2026-09-07T01:25:04.336Z  
 
 ```py
 # Declare the cost per unit as a float
@@ -41,10 +41,7 @@ units_needed = 150
 # Declare the delivery charge as an integer
 delivery_charge = 50  
 
-# Calculate the material cost by multiplying cost per unit with units needed
 
-
-# Add the delivery charge to calculate the total cost
 total_cost=(cost_per_unit* units_needed)+delivery_charge
 
 # Print the total cost
