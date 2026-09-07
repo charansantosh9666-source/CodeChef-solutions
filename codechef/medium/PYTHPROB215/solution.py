@@ -7,10 +7,7 @@ units_needed = 150
 # Declare the delivery charge as an integer
 delivery_charge = 50  
 
-# Calculate the material cost by multiplying cost per unit with units needed
 
-
-# Add the delivery charge to calculate the total cost
 total_cost=(cost_per_unit* units_needed)+delivery_charge
 
 # Print the total cost
