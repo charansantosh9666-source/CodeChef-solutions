@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+int ans(vector <int> a,int n,int k){
+    vector<int>b;
+    for(int i=0;i<n;i++){
+        if (i%2==0 ){
+	        b.push_back(a[i]);
+	    }
+	}
+	n=b.size();
+	int sum=0;
+	for(int i=0;i<n;i++){
+        if(b[i]==2*k){
+            return 0;
+        }else if(b[i]>2*k){
+            sum+=b[i];
+        }
+	}
+	return sum;
+}
+int main() {
+	// your code goes here
+	int n,k;
+	cin>>n>>k;
+	vector<int>a;
+	for(int i=0;i<n;i++){
+	    int b;
+	    cin>>b;
+	    a.push_back(b);
+	}
+	int b;
+	b=ans(a,n,k);
+	cout<<b;
+	return 0;
+}
