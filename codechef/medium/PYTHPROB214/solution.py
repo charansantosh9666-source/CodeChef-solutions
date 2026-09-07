@@ -1,4 +1,6 @@
-length = 5.5  # Length of the rectangle
-width = 3.2   # Width of the rectangle
-area = length * width  # Calculating the area by multiplying length and width
-print(area)  # This will output the area of the rectangle
+# Step 1: Declare the radius and height as float variables
+radius = 2.5
+height = 7.0
+r2=radius * radius
+p=3.14
+print(p*r2*height)
