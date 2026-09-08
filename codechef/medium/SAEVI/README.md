@@ -83,23 +83,28 @@ Therefore, the required sum is `0`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:52:41.805Z  
+**Submitted:** 2026-09-07T14:51:27.526Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
-long long ans(const vector<int>& a, int n, long long k) {
-    long long sum = 0;
-    long long target = 2 * k;
-
-    // Iterate only through even indices
-    for (int i = 0; i < n; i += 2) {
-        // Consider only elements strictly greater than 2K
-        if (a[i] > target) {
-            sum += a[i];
+int ans(vector <int> a,int n,int k){
+    vector<int>b;
+    for(int i=0;i<n;i++){
+        if (i%2==0 ){
+	        b.push_back(a[i]);
+	    }
+	}
+	n=b.size();
+	int sum=0;
+	for(int i=0;i<n;i++){
+        if(b[i]==2*k){
+            return 0;
+        }else if(b[i]>2*k){
+            sum+=b[i];
         }
-    }
-    return sum;
+	}
+	return sum;
 }
 int main() {
 	// your code goes here
