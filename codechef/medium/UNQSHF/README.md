@@ -74,17 +74,41 @@ So, no solution exists.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:06:28.424Z  
+**Submitted:** 2026-09-09T15:07:28.456Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-	// your code goes here
-
+void solve() {
+    int n;
+    cin >> n;
+    string a, b;
+    cin >> a >> b;
+    
+    int countA_a = count(a.begin(), a.end(), 'a');
+    int countA_b = n - countA_a;
+    
+    int countB_a = count(b.begin(), b.end(), 'a');
+    int countB_b = n - countB_a;
+    
+    if (countA_a == countB_b && countA_b == countB_a) {
+        cout << "YES\n";
+    } else {
+        cout << "NO\n";
+    }
 }
 
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
 ```
 
 ---
