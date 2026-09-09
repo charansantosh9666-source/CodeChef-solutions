@@ -2,6 +2,19 @@
 using namespace std;
 
 int main() {
-	// your code goes here
+	ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int X, Y, F;
+    cin >> X >> Y >> F;
+
+    // Calculate costs for both options
+    int cost_shop1 = 12 * X;
+    int cost_shop2 = (12 * Y) + F;
+
+    // Find and print the minimum cost
+    cout << min(cost_shop1, cost_shop2) << "\n";
+
+    return 0;
 
 }
