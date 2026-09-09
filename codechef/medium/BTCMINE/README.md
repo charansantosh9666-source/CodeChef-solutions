@@ -65,17 +65,51 @@ It can be verified that there's no way to make a positive profit by the end of t
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:10:13.462Z  
+**Submitted:** 2026-09-09T15:11:19.655Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
+void solve() {
+    long long X, Y;
+    cin >> X >> Y;
 
-int main() {
-	// your code goes here
+    long long max_days = 205; 
+    vector<long long> dp(max_days + 1, -1e18);
+    dp[0] = 0;
 
+    for (int day = 1; day <= max_days; ++day) {
+        vector<long long> next_dp(max_days + 1, -1e18);
+        for (int gpus = 0; gpus <= day; ++gpus) {
+            if (dp[gpus] < -1e17) continue;
+
+            long long p1 = dp[gpus] + Y * gpus * gpus;
+            next_dp[gpus] = max(next_dp[gpus], p1);
+
+            long long p2 = dp[gpus] - X + Y * (gpus + 1) * (gpus + 1);
+            next_dp[gpus + 1] = max(next_dp[gpus + 1], p2);
+        }
+        dp = move(next_dp);
+
+        for (int gpus = 0; gpus <= day; ++gpus) {
+            if (dp[gpus] > 0) {
+                cout << day << "\n";
+                return;
+            }
+        }
+    }
 }
 
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int T;
+    cin >> T;
+    while (T--) {
+        solve();
+    }
+    return 0;
+}
 ```
 
 ---
