@@ -68,14 +68,27 @@ It's better to buy from the second shop, spending $53$ coins.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T15:04:50.409Z  
+**Submitted:** 2026-09-09T15:05:57.563Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+	ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int X, Y, F;
+    cin >> X >> Y >> F;
+
+    // Calculate costs for both options
+    int cost_shop1 = 12 * X;
+    int cost_shop2 = (12 * Y) + F;
+
+    // Find and print the minimum cost
+    cout << min(cost_shop1, cost_shop2) << "\n";
+
+    return 0;
 
 }
 
