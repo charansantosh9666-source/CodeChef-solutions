@@ -1,7 +1,42 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-	// your code goes here
+void solve() {
+    int n;
+    if (!(std::cin >> n)) return;
+    
+    std::vector<int> a(n);
+    for (int i = 0; i < n; ++i) {
+        std::cin >> a[i];
+    }
+    
+    std::sort(a.begin(), a.end());
+    
+    int max_ans = 0;
+    int current_freq = 0;
+    
+    for (int i = 0; i < n; ++i) {
+        if (i == 0 || a[i] == a[i - 1]) {
+            current_freq++;
+        } else {
+            max_ans = std::max(max_ans, (current_freq + 1) / 2);
+            current_freq = 1;
+        }
+    }
+    max_ans = std::max(max_ans, (current_freq + 1) / 2);
+    
+    std::cout << max_ans << "\n";
+}
 
+int main() {
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+    
+    int t;
+    if (std::cin >> t) {
+        while (t--) {
+            solve();
+        }
+    }
+    return 0;
 }
