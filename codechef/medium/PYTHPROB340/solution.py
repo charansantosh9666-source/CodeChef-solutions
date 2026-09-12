@@ -1,9 +1,12 @@
-# Declare a string variable for the weather update
-weather_update = "Today's weather is sunny!"
+# cook your dish here
+products = """12 Smartphone
+34 Laptop
+56 Tablet"""
 
-# Access and print the second character using positive indexing
-print(weather_update[1])
-# Access and print the sixth character using positive indexing
-print(weather_update[5])
-# Access and print the second-to-last character using positive indexing
-print(weather_update[-2])
+product_id_1 = products[0] + products[1]  
+product_id_2 = products[14] + products[15]  
+product_id_3 = products[24] + products[25] 
+
+print(product_id_1)
+print(product_id_2)
+print(product_id_3)
