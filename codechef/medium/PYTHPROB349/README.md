@@ -4,26 +4,16 @@
 
 ## Problem
 
-### Change Greeting Message
-
-Consider the following Python code:
-
-```
-s = "hello"
-print(s[0])
-
-```
-
-What will be the output of this code?
+_Description not available._
 
 ## Solution
 
-**Language:** C++  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-13T08:07:12.955Z  
+**Submitted:** 2026-09-13T08:07:00.487Z  
 
-```cpp
+```py
 # Step 1: Define the strings
 object_name = "Sea"
 detail = "is soo tasty"
