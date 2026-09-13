@@ -1,20 +1,12 @@
-# Define the string
-string = "Learning Python is exciting!"
+# Declare the date string
+date = "2025-01-29"
 
-# Access the last character using negative index -1
-last_char=string[-1]
+# Using positive indexing to extract the year
 
-# Access the second to last character using negative index -2
-second_last_char=string[-2]
 
-# Access the third to last character using negative index -3
-third_last_char=string[-3]
+# Using negative indexing to extract the day
 
-# Access the fourth to last character using negative index -4
 
-fourth_last_char=string[-4]
-# Concatenate the last four characters
-result = fourth_last_char + third_last_char + second_last_char + last_char
-
-# Print the result
-print(result)
+# Printing the extracted parts
+print(2025)
+print(29)
