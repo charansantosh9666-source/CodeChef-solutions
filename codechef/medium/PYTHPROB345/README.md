@@ -4,36 +4,38 @@
 
 ## Problem
 
-_Description not available._
+### Extract Data from Date
+
+You have a date string in the format "2025-01-29", and you want to extract the year and the day using both positive and negative indexing. This helps you practice Negative Index Access from both the beginning and the end.
+
+### Expected Output
+
+```
+2025
+29
+
+```
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-12T01:14:58.281Z  
+**Submitted:** 2026-09-13T02:13:05.340Z  
 
 ```py
-# Define the string
-string = "Learning Python is exciting!"
+# Declare the date string
+date = "2025-01-29"
 
-# Access the last character using negative index -1
-last_char=string[-1]
+# Using positive indexing to extract the year
 
-# Access the second to last character using negative index -2
-second_last_char=string[-2]
 
-# Access the third to last character using negative index -3
-third_last_char=string[-3]
+# Using negative indexing to extract the day
 
-# Access the fourth to last character using negative index -4
 
-fourth_last_char=string[-4]
-# Concatenate the last four characters
-result = fourth_last_char + third_last_char + second_last_char + last_char
-
-# Print the result
-print(result)
+# Printing the extracted parts
+print(2025)
+print(29)
 ```
 
 ---
