@@ -4,16 +4,25 @@
 
 ## Problem
 
-_Description not available._
+### Create Empty Slices from a Poem
+
+Given the following string:
+
+```
+poem = "Two roads diverged in a yellow wood, And sorry I could not travel both."
+
+```
+
+Which of the following slicing operations will result in an empty string (`""`) in Python?
 
 ## Solution
 
-**Language:** Python  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T01:42:56.300Z  
+**Submitted:** 2026-09-14T01:43:04.751Z  
 
-```py
+```cpp
 # Define a quote for slicing  
 quote = "The only limit to our realization of tomorrow is our doubts of today."
 
