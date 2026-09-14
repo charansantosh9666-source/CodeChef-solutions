@@ -20,7 +20,7 @@ Which of the following slicing operations will result in an empty string (`""`) 
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T01:43:09.438Z  
+**Submitted:** 2026-09-14T01:43:14.892Z  
 
 ```cpp
 # Define a quote for slicing  
