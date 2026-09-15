@@ -4,16 +4,31 @@
 
 ## Problem
 
-_Description not available._
+### Validate the Case of Animal Name
+
+A zookeeper is entering animal names into a database. To ensure consistency, all predator names must be in uppercase, while all herbivore names must be in lowercase.
+
+Given the following code snippet:
+
+```
+predator = "TIGER"
+herbivore = "giraffe"
+
+print(predator.isupper())  
+print(herbivore.islower())
+
+```
+
+ **What will be the output of the above code?**
 
 ## Solution
 
-**Language:** Python  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-15T08:42:19.867Z  
+**Submitted:** 2026-09-15T08:44:26.508Z  
 
-```py
+```cpp
 # Defining animal names
 animal1 = "LION"      # Uppercase
 animal2 = "elephant"  # Lowercase
