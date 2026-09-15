@@ -1,4 +1,5 @@
-# Define the original farewell message
-farewell = "goodbye, see you soon!"
+# Define the original welcome message
+welcome_message = "welcome to the Python programming course!"
 
-print(farewell.upper())
+welcome_message+=" john"
+print(welcome_message.upper())
