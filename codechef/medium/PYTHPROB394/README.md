@@ -4,24 +4,26 @@
 
 ## Problem
 
-_Description not available._
+### Cleaning Up Product Code
+
+A warehouse system has product codes that inadvertently have leading hyphens "----X1234".
+
+You need to remove these hyphens at the start of the string using the lstrip() method — leaving the rest of the code intact.
+
+Output the cleaned product code to the console based on the comments in the IDE.
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-15T08:56:51.810Z  
+**Submitted:** 2026-09-15T08:57:41.073Z  
 
 ```py
-# Step 1: Declare the mission name with leading asterisks
-mission_name = "***APOLLO 11"
+# Step 1: Declare the product code with leading asterisks
+product_code = "----X1234"
 
-# Step 2: Remove leading asterisks using lstrip()
-cleaned_name = mission_name.lstrip('*')
-
-# Step 3: Print the cleaned name
-print(cleaned_name)
+print(product_code.lstrip('-'))
 ```
 
 ---
