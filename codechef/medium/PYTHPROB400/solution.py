@@ -1,5 +1,6 @@
-# Define the reminder note with unwanted trailing dashes
-reminder_note = "Buy groceries for the week!------"
+# Step 1: Declare the product name with trailing '$' symbols
+product_name = "Shampoo$$$"
 
-c=reminder_note.rstrip('-')
+c=product_name.rstrip('$')
 print(c)
+print(len(c))
