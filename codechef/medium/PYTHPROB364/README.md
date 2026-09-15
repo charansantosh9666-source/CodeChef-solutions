@@ -21,7 +21,7 @@ Jonny
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T01:45:01.591Z  
+**Submitted:** 2026-09-15T01:11:29.618Z  
 
 ```py
 # Assigning the full name to the variable
