@@ -1,6 +1,4 @@
-# Step 1: Declare the messy address with leading symbols
-messy_address = "####123 Baker Street"
+# Step 1: Declare the product code with leading asterisks
+product_code = "----X1234"
 
-c=messy_address.lstrip('#')
-print(c)
-print(len(c))
+print(product_code.lstrip('-'))
