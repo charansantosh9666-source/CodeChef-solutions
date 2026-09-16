@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes 
+	ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        vector<long long> A(N);
+        long long total = 0;
+
+        for (auto &x : A) {
+            cin >> x;
+            total += x;
+        }
+
+        sort(A.rbegin(), A.rend());
+
+        long long ans = 0;
+        long long pref = 0;
+
+        for (int R = 1; R <= N / 2; R++) {
+            pref += A[R - 1];
+
+            long long current = pref * (N - 2LL * R)
+                              + total * R;
+
+            ans = max(ans, current);
+        }
+
+        cout << ans << '\n';
+    }
+
+    return 0;
+
+}
