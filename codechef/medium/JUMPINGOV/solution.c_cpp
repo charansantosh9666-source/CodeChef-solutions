@@ -1,0 +1,59 @@
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        vector<int> pos(N + 1);
+
+        for (int i = 1; i <= N; ++i) {
+            int x;
+            cin >> x;
+            pos[x] = i;
+        }
+        vector<ll> PF(N + 1, 0);
+
+        for (int v = 1; v <= N; ++v) {
+            PF[v] = PF[v - 1] + (pos[v] - 1LL);
+        }
+        vector<ll> SB(N + 2, 0);
+
+        for (int v = N; v >= 1; --v) {
+            SB[v] = SB[v + 1] + (N - pos[v]);
+        }
+
+        ll ans = LLONG_MAX;
+
+        int a = 1;
+
+        while (a <= N) {
+            int b = a;
+
+            while (b + 1 <= N && pos[b] < pos[b + 1]) {
+                ++b;
+            }
+            ll bestLeft = LLONG_MAX;
+
+            for (int r = a; r <= b; ++r) {
+                bestLeft = min(bestLeft, PF[r - 1]);
+
+                ans = min(ans, bestLeft + SB[r + 1]);
+            }
+
+            a = b + 1;
+        }
+
+        cout << ans << '\n';
+    }
+
+    return 0;
+}
