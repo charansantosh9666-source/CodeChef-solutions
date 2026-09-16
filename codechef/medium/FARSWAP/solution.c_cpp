@@ -1,7 +1,58 @@
 #include <bits/stdc++.h>
 using namespace std;
+const long long MOD = 998244353;
 
 int main() {
 	// your code goes here
+	ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        vector<int> P(N + 1), pos(N + 1);
+
+        for (int i = 1; i <= N; i++) {
+            cin >> P[i];
+            pos[P[i]] = i;
+        }
+        vector<long long> dp(N + 1), ndp(N + 1);
+        dp[1] = 1;
+
+        for (int len = 2; len <= N; len++) {
+            vector<long long> pref(len, 0);
+            for (int j = 1; j <= len - 1; j++) {
+                pref[j] = (pref[j - 1] + dp[j]) % MOD;
+            }
+
+            fill(ndp.begin(), ndp.end(), 0);
+            if (pos[len - 1] < pos[len]) {
+                for (int j = 1; j <= len; j++) {
+                    ndp[j] = pref[j - 1];
+                }
+            } else {
+                long long total = pref[len - 1];
+
+                for (int j = 1; j <= len; j++) {
+                    ndp[j] = (total - pref[j - 1] + MOD) % MOD;
+                }
+            }
+
+            dp.swap(ndp);
+        }
+
+        long long ans = 0;
+        for (int j = 1; j <= N; j++) {
+            ans = (ans + dp[j]) % MOD;
+        }
+
+        cout << ans << '\n';
+    }
+
+    return 0;
 
 }
