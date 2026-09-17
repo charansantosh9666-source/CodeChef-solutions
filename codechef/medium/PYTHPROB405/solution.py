@@ -10,7 +10,7 @@ formatted_name=com.title()
 # Convert names to title case
 
 
-formatted_name.title()
+
 
 # Print results
 print(first_valid)
