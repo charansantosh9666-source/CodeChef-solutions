@@ -27,7 +27,7 @@ John Doe3
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T12:30:29.702Z  
+**Submitted:** 2026-09-17T01:13:27.963Z  
 
 ```py
 # Declare first name and last name
@@ -42,6 +42,7 @@ formatted_name=com.title()
 # Convert names to title case
 
 
+formatted_name.title()
 
 # Print results
 print(first_valid)
