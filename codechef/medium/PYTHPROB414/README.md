@@ -4,16 +4,18 @@
 
 ## Problem
 
-_Description not available._
+### Find the correct output
+
+Which of the following strings will return `True` when checked with the `isalnum()` method?
 
 ## Solution
 
-**Language:** Python  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-20T02:33:18.737Z  
+**Submitted:** 2026-09-20T02:33:32.716Z  
 
-```py
+```cpp
 # Step 1: Declare the employee ID
 employee_id = "empID_123"
 
