@@ -1,8 +1,8 @@
-# Define the string variable
-text = "The cat sat on the mat. My neighbor has a cat too. The cat is very playful."
+# Define a string with multiple occurrences of the word "dog"
+text = "The dog barked at the dog in the park. The dog was very happy."
 
-# Count the occurrences of "cat"
+# Count how many times "dog" appears in the string
+count_dog = text.count("dog")
 
-Count=text.count("cat")
 # Print the result
-print(Count)
+print(count_dog)
