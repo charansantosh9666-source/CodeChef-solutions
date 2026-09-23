@@ -4,29 +4,40 @@
 
 ## Problem
 
-### Count Occurrences of cat
+### Worked Example - Count Occurrences of a Word
 
-You have a sentence: "The cat sat on the mat. My neighbor has a cat too. The cat is very playful."
+In this example, we demonstrate how to use Python’s `count()` method to count how many times the word "dog" appears in a given string. This exercise will help you understand how to find the total number of occurrences of a specific substring within a string.
 
-Your goal is to determine how many times the word "cat" appears in this sentence.
-This will reinforce using the count() method to find substring occurrences in a string.
+Consider the following variable:
+
+```
+text = "The dog barked at the dog in the park. The dog was very happy."
+
+```
+
+When the given code is executed, you will see the total count of occurrences of "dog". For the given string, the substring "dog" appears 3 times, so you will see:
+
+```
+3
+
+```
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T02:02:53.999Z  
+**Submitted:** 2026-09-23T02:02:12.925Z  
 
 ```py
-# Define the string variable
-text = "The cat sat on the mat. My neighbor has a cat too. The cat is very playful."
+# Define a string with multiple occurrences of the word "dog"
+text = "The dog barked at the dog in the park. The dog was very happy."
 
-# Count the occurrences of "cat"
+# Count how many times "dog" appears in the string
+count_dog = text.count("dog")
 
-Count=text.count("cat")
 # Print the result
-print(Count)
+print(count_dog)
 ```
 
 ---
