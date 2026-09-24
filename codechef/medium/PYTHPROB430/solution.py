@@ -1,8 +1,10 @@
-# Define the string variable
-text = "The cat sat on the mat. My neighbor has a cat too. The cat is very playful."
+# Declare the product review
+review = "This phone is amazing! The camera of this phone is great. I love this phone."
 
-# Count the occurrences of "cat"
+print(review.lower())
 
-Count=text.count("cat")
-# Print the result
+Count=review.count("phone")
+
 print(Count)
+
+print(len(review))
