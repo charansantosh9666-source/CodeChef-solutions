@@ -1,8 +1,5 @@
-# Declare a message with a greeting
-message = "Happy Birthday, Alice! Wishing you a wonderful year ahead."
+# Declare a message describing a pet cat
+message = "I love my cat, Whiskers! She is the best cat ever."
 
-# Replace the name "Alice" with "Bob" in the message
-new_message = message.replace("Alice", "Bob")
-
-# Print the updated message
-print(new_message)
+message=message.replace("Whiskers","Bella")
+print(message)
