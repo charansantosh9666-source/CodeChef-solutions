@@ -25,7 +25,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-06T02:46:27.523Z  
+**Submitted:** 2026-09-27T05:04:47.289Z  
 
 ```py
 num = int(input())
