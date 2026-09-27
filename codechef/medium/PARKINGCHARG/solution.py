@@ -1,7 +1,9 @@
 # cook your dish here
-a,b,c=map(int,input().split())
-if(a>b):
-    ans=((c-b)*b)+a
+x,y,h=map(int,input().split())
+
+h=h-1
+if h==0:
+    print(a)
 else:
-    ans=((c-a)*b)+a
-print(ans)
+    ans=(h*y)+x
+    print(ans)
