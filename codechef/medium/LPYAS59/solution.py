@@ -1,8 +1,8 @@
 # cook your dish here
-a= int(input())
-if(a==0):
-    print("Zero")
-elif(a>0):
+n=int(input())
+if n>0:
     print("Positive")
+elif n==0:
+    print("Zero")
 else:
     print("Negative")
