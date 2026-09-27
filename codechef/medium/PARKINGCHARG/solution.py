@@ -1,5 +1,7 @@
 # cook your dish here
 a,b,c=map(int,input().split())
-
-ans=((c-b)*b)+a
+if(a>b):
+    ans=((c-b)*b)+a
+else:
+    ans=((c-a)*b)+a
 print(ans)
