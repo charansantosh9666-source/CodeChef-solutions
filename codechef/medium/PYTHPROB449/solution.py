@@ -1,4 +1,4 @@
-# Declare a string with a single product code
-product_code = "prod-12345"
+email_address = "john-d007@company.com"
 
-print(product_code.startswith("prod-"))
+print(email_address.startswith("company-name-"))
+
