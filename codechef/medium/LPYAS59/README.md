@@ -47,15 +47,15 @@ Negative
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T12:59:48.479Z  
+**Submitted:** 2026-09-27T04:56:45.202Z  
 
 ```py
 # cook your dish here
-a= int(input())
-if(a==0):
-    print("Zero")
-elif(a>0):
+n=int(input())
+if n>0:
     print("Positive")
+elif n==0:
+    print("Zero")
 else:
     print("Negative")
 ```
