@@ -1,10 +1,4 @@
-# Declare a string with a single item code
-item_code = "item-bookOfKnowledge"
+# Declare a string with a single product code
+product_code = "prod-12345"
 
-
-print(item_code.startswith("item-"))
-
-print(item_code.islower())
-
-
-
+print(product_code.startswith("prod-"))
