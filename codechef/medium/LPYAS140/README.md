@@ -23,7 +23,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-06T03:04:19.980Z  
+**Submitted:** 2026-09-27T05:06:32.634Z  
 
 ```py
 def calculate_area(length, width):
