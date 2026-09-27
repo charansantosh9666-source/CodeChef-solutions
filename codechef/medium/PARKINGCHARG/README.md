@@ -4,107 +4,104 @@
 
 ## Problem
 
-Chef has recently started learning from the new CodeChef SQL course.
+Chef needs to park her car while she watches a movie. The parking charges at the theater are as follows:
 
-He has a table which initially has $R$ rows and $C$ columns. He then adds $E$ extra rows to it. How many total cells does he have finally?
+- Rs. $X$ for the first 1 hour
+- Rs. $Y$ for every extra hour after the first hour
+
+If Chef parks her car for $H$ hours, what is the total parking charges that she should pay?
 
 ### Input Format
 
-The only line in the input contains three space-separated integers $R$, $C$, and $E$ — the number of initial rows, the number of columns, and the number of extra rows added, respectively.
+The only line of the input will contain three space separated integers - $X$, $Y$, and $H$.
 
 ### Output Format
 
-Output on a new line, a single integer, which should be the final total number of cells in the table.
+Output a single integer, which should be the total amount that Chef pays as parking charge.
 
 ### Constraints
-- $1 \leq R \leq 100$
-- $1 \leq C \leq 100$
-- $1 \leq E \leq 100$
+- $1 \leq X \leq 100$
+- $1 \leq Y \leq 100$
+- $1 \leq H \leq 100$
 ### Sample 1:
 Input
 Output
 
 ```
-5 2 1
+10 1 5
 
 ```
 
 ```
-12
+14
 
 ```
 
 ### Explanation:
 
-There are initially $5$ rows, and $2$ columns. So the initial number of cells was $5  *2 = 10$. Then, $1$ extra row was added. So now the table has $6$ rows, and $2$ columns. So the total number of cells is now $6*  2 = 12$, which is the answer.
+$X = 10$, which means that for the first hour, Chef has to pay Rs. 10.
+$Y = 1$, which means that for every extra hour, Chef has to pay Rs. 1.
+Chef needs to park for $H = 5$ hours.
+
+So, for the first hour, she will pay Rs. $10$. And for the $5 - 1 = 4$ hours extra, she will pay $4 * 1 =$Rs. $4$. So in total, she has to pay $10 + 4 =$ Rs. $14$.
 
 ### Sample 2:
 Input
 Output
 
 ```
-6 10 3
+1 10 100
 
 ```
 
 ```
-90
+991
 
 ```
 
 ### Explanation:
 
-There are initially $6$ rows, and $10$ columns. So the initial number of cells was $6  *10 = 60$. Then, $3$ extra rows were added. So now the table has $9$ rows, and $10$ columns. So the total number of cells is now $9*  10 = 90$, which is the answer.
+$X = 1$, which means that for the first hour, Chef has to pay Rs. 1.
+$Y = 10$, which means that for every extra hour, Chef has to pay Rs. 10.
+Chef needs to park for $H = 100$ hours.
+
+So, for the first hour, she will pay Rs. $1$. And for the $100 - 1 = 99$ hours extra, she will pay $99 * 10 =$Rs. $990$. So in total, she has to pay $1 + 990 =$ Rs. $991$.
 
 ### Sample 3:
 Input
 Output
 
 ```
-1 1 1 
+10 15 1
 
 ```
 
 ```
-2
-
-```
-
-### Explanation:
-
-There are initially $1$ rows, and $1$ columns. So the initial number of cells was $1  *1 = 1$. Then, $1$ extra row was added. So now the table has $2$ rows, and $1$ columns. So the total number of cells is now $2*  1 = 2$, which is the answer.
-
-### Sample 4:
-Input
-Output
-
-```
-100 100 100
-
-```
-
-```
-20000
+10
 
 ```
 
 ### Explanation:
 
-There are initially $100$ rows, and $100$ columns. So the initial number of cells was $100  *100 = 10000$. Then, $100$ extra rows were added. So now the table has $200$ rows, and $100$ columns. So the total number of cells is now $200*  100 = 20000$, which is the answer.
+$X = 10$, which means that for the first hour, Chef has to pay Rs. 10.
+$Y = 15$, which means that for every extra hour, Chef has to pay Rs. 15.
+Chef needs to park for $H = 1$ hours.
+
+So, for the first hour, she will pay Rs. $10$. And she does not have to pay any more. So in total, she has to pay Rs. $10$.
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-27T04:40:03.421Z  
+**Submitted:** 2026-09-27T04:42:21.392Z  
 
 ```py
 # cook your dish here
-
 a,b,c=map(int,input().split())
 
-print((a+c)*b)
+ans=((c-b)*b)+a
+print(ans)
 ```
 
 ---
