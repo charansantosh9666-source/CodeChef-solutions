@@ -1,3 +1,5 @@
 # cook your dish here
-n=int(input())
-print(n*2)
+
+a,b,c=map(int,input().split())
+
+print((a+c)*b)
