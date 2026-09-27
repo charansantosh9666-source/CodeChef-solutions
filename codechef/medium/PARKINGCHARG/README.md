@@ -94,16 +94,18 @@ So, for the first hour, she will pay Rs. $10$. And she does not have to pay any 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-27T04:44:38.137Z  
+**Submitted:** 2026-09-27T04:50:38.177Z  
 
 ```py
 # cook your dish here
-a,b,c=map(int,input().split())
-if(a>b):
-    ans=((c-b)*b)+a
+x,y,h=map(int,input().split())
+
+h=h-1
+if h==0:
+    print(a)
 else:
-    ans=((c-a)*b)+a
-print(ans)
+    ans=(h*y)+x
+    print(ans)
 ```
 
 ---
