@@ -1,8 +1,7 @@
-# Original greeting message
-greeting = "Happy Birthday!"
+birthday_message = "Happy*Birthday!"  # Original message
 
-# Center the greeting within a width of 30 characters, using '#' as padding
-centered_greeting = greeting.center(30, '#')
+centered_message=birthday_message.center(50,"=")
 
-# Print the formatted greeting
-print(centered_greeting)
+
+# Print the final formatted birthday message
+print(centered_message)
