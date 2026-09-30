@@ -2,6 +2,10 @@
 using namespace std;
 
 int main() {
-	// your code goes here
-
+	int b, h, c;
+    if (cin >> b >> h >> c) {
+        int max_sandwiches = min(b / 2, h + c);
+        cout << max_sandwiches << endl;
+    }
+    return 0;
 }
