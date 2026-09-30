@@ -57,15 +57,19 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:40:14.819Z  
+**Submitted:** 2026-09-30T15:40:55.413Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
-
+	int b, h, c;
+    if (cin >> b >> h >> c) {
+        int max_sandwiches = min(b / 2, h + c);
+        cout << max_sandwiches << endl;
+    }
+    return 0;
 }
 
 ```
