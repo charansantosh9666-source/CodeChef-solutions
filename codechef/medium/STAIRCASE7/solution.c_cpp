@@ -1,7 +1,31 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-	// your code goes here
 
+void solve() {
+    int n;
+    cin >> n;
+    vector<int> a(n);
+    unordered_map<int, int> counts;
+    int max_freq = 0;
+    
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+        int transformed_val = a[i] - (i + 1); 
+        counts[transformed_val]++;
+        max_freq = max(max_freq, counts[transformed_val]);
+    }
+    
+    cout << n - max_freq << "\n";
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
 }
