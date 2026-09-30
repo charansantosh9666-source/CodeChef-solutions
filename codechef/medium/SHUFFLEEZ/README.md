@@ -60,17 +60,56 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:46:08.827Z  
+**Submitted:** 2026-09-30T15:47:17.858Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-	// your code goes here
 
+const int MOD = 998244353;
+
+long long power(long long base, long long exp) {
+    long long res = 1;
+    base %= MOD;
+    while (exp > 0) {
+        if (exp % 2 == 1) res = (res * base) % MOD;
+        base = (base * base) % MOD;
+        exp /= 2;
+    }
+    return res;
 }
 
+void solve() {
+    long long n, k;
+    cin >> n >> k;
+    
+    vector<int> q(n);
+    for (int i = 0; i < n; i++) {
+        cin >> q[i];
+    }
+    
+    long long fact_k = 1;
+    for (int i = 1; i <= k; i++) {
+        fact_k = (fact_k * i) % MOD;
+    }
+    
+    long long pow_k = power(k, n - k);
+    
+    long long ans = (fact_k * pow_k) % MOD;
+    cout << ans << "\n";
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
 ```
 
 ---
