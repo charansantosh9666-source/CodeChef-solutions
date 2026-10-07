@@ -1,8 +1,10 @@
-# User enters their dream car brand and model (same line)
-car_brand, car_model =input().split()        # Splitting string inputs
+activity,place=input().split()
 
-# User enters the year they want to own the car (new line)
-dream_year =int(input())                    # Convert input to integer
+favorite_activity=activity.upper()
 
-# Output the collected information
-print(f"You dream of owning a {car_brand} {car_model} in the year {dream_year}.")
+favorite_place=place.upper()
+
+num_friends,hours_spent=map(int,input().split())
+
+print(f"You plan to go {favorite_activity} at the {favorite_place}.")
+print(f"You will be joined by {num_friends} friends and will spend {hours_spent} hours there.")
