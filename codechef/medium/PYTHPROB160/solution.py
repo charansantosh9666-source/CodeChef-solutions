@@ -1,8 +1,8 @@
-# Step 1: Define the number
-number = int(input())    # User input
+# Step 1: Take input for the participant's age
+age = int(input().strip())  # Input the participant's age
 
-if number>=0:
-    print("The number is positive.")
+if age%2==0:
+    print("Your age is even!")
     
 else:
-    print("The number is negative.")
+    print("Your age is odd!")
