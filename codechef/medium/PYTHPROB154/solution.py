@@ -1,8 +1,7 @@
-# Step 1: Create two variables for Team A's target and Team B's score
-team_a_target = 200
-team_b_score = 210
+# Step 1: Define the required distance and participant's distance
+required_distance =int(input())# User input - Minimum distance required to qualify 
+participant_distance =int(input()) # User input - Distance run by the participant 
 
-# Step 2: Compare scores to determine if Team B wins
-if team_b_score > team_a_target:            # Is Team B's score greater than Team A's target?
-    print("Team B wins!")                   # Print the result if Team B wins
-
+# Step 2: Check if the participant qualifies for the next round
+if participant_distance >= required_distance:  # Is the participant's distance enough to qualify?
+    print("Qualified for next round!")  # Print result if the condition is true
