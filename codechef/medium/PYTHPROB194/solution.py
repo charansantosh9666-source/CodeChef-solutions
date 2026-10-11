@@ -1,9 +1,12 @@
-# Define the completed hours and meetings attended
-completed_hours = 42  
-attended_meetings = 6
+# Define the age of the user
+age = int(input()) 
 
-# Check bonus eligibility using if-else statement
-if completed_hours >= 40 and attended_meetings >= 5:
-    print(True)  # If both conditions are met, print True
+# Define if the user is an active member
+is_active_member = input() 
+
+# Check if the user is eligible based on age and membership status
+
+if age>=18 and age<=50 or is_active_member ==True:
+    print("Access granted")
 else:
-    print(False)  # If any condition is not met, print False
+    print("Access denied")
