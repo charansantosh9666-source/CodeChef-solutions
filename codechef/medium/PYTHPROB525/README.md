@@ -49,7 +49,7 @@ INVALID AGE INPUT
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-15T02:34:41.879Z  
+**Submitted:** 2026-10-15T02:35:49.139Z  
 
 ```py
 # Take user input for age, remove extra spaces, and convert it to an integer
