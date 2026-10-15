@@ -1,5 +1,5 @@
 # Take user input for age, remove extra spaces, and convert it to an integer
-a=int(input())
+a=int(input().strip())
 
 # Check the age category using if-elif-else statements
 b="Child"
