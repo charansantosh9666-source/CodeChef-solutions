@@ -1,16 +1,19 @@
-# Take user input for traffic light color and process it
-main_light = input( )
+# Take user input for age, remove extra spaces, and convert it to an integer
+a=int(input())
 
-# Take user input for blinking light color
-blinking_light = input( )
-
-# Check the light color and determine the action using 'or' operator
-if main_light == "red" or blinking_light == "flashing red":
-    print("Stop")  
-elif main_light == "yellow" or blinking_light == "blinking yellow":
-    print("Slow Down")  
-# Update the code below this line
-elif main_light=="green" or blinking_light =="blinking green" :
-    print("Go")
+# Check the age category using if-elif-else statements
+b="Child"
+c="Teenager"
+d="Adult"
+e="Senior"
+# Dont forget to output in uppercase
+if a>=0 and a<=12:
+    print(b.upper())
+elif a>=13 and a<=19:
+    print(c.uppper())
+elif a>=20 and a<=64:
+    print(d.upper())
+elif a>=65:
+    print(e.upper())
 else:
-    print("Invalid input")
+    print("INVALID AGE INPUT")
