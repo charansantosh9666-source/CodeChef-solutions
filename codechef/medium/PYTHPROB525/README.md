@@ -49,11 +49,11 @@ INVALID AGE INPUT
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-15T02:36:11.138Z  
+**Submitted:** 2026-10-15T02:34:06.076Z  
 
 ```py
 # Take user input for age, remove extra spaces, and convert it to an integer
-a=int(input().strip())
+a=int(input())
 
 # Check the age category using if-elif-else statements
 b="Child"
